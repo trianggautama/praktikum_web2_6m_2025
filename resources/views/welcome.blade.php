@@ -4,7 +4,8 @@
     <div class="text-center">
         <h3>Login page</h3>
     </div>
-    <form action="">
+    <form action="{{route('login.post')}}" method="POST">
+        @csrf
         <div class="form-group mt-3">
             <label for="">Username</label>
             <input type="text" name="username" id="username" 
@@ -15,9 +16,10 @@
             <input type="password" name="password" id="password" 
                 placeholder="Password" class="form-control">
         </div>
-        <a href="{{route('home')}}" class="mt-4 btn btn-primary">
+        <a href="{{route('register')}}">belum punya akun ? register sekarang</a> <br>
+        <button type="submit" class="mt-4 btn btn-primary">
             Login
-        </a>
+        </button>
     </form>
 </div>
 @endsection

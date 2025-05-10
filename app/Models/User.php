@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
 
-    protected $table = 'user';
+    protected $table = 'users';
 
     protected $guarded = ['id'];
 
@@ -37,7 +37,5 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+
 }
